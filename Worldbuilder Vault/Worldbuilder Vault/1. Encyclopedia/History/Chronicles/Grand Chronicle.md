@@ -1,6 +1,0 @@
-
--------
-
-```aat-vertical
-grand timeline
-```
