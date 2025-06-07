@@ -1,0 +1,212 @@
+{
+  "dateDisplayFormat": "{day} of the {month} of {year} {age}",
+  "dateParserGroupPriority": "day,month,year,age",
+  "dateParserRegex": "(?<day>-?[0-9]*)-(?<month>-?[0-9]*)-(?<year>-?[0-9]*)-(?<age>-?[0-5]*)",
+  "eventRenderToggleKey": "aat-render-enabled",
+  "inlineEventEndOfBodyMarker": "%%aat-event-end-of-body%%",
+  "markdownBlockTagsToFindSeparator": ",",
+  "metadataKeyEventBodyOverride": "fc-event-body",
+  "metadataKeyEventEndDate": "fc-end",
+  "metadataKeyEventPictureOverride": "aat-event-picture",
+  "metadataKeyEventStartDate": "fc-date",
+  "metadataKeyEventTimelineTag": "timelines",
+  "metadataKeyEventTitleOverride": "fc-display-name",
+  "noteInlineEventKey": "aat-inline-event",
+  "ignoreLineCommentToken": "aat-ignore-line",
+  "applyAdditonalConditionFormatting": true,
+  "lookForCalendariumSpanEvents": true,
+  "lookForInlineEventsInNotes": true,
+  "lookForTagsForTimeline": true,
+  "stylizeDateInline": false,
+  "bodyFontSize": -1,
+  "dateFontSize": -1,
+  "titleFontSize": -1,
+  "dateTokenConfiguration": [
+    {
+      "minLeght": 4,
+      "name": "year",
+      "type": "NUMBER",
+      "displayWhenZero": true,
+      "formatting": [],
+      "hideSign": false
+    },
+    {
+      "minLeght": 0,
+      "name": "month",
+      "type": "NUMBER",
+      "displayWhenZero": true,
+      "formatting": [
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 1
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "First Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 2
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Second Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 3
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Third Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 4
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Fourth Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 5
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Fifth Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 6
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Sixth Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 7
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Seventh Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 8
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Eight Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 9
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Ninth Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 10
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Tenth Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 11
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Eleventh Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 12
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Twelfth Moon"
+        },
+        {
+          "evaluations": [
+            {
+              "condition": "EQUAL",
+              "value": 13
+            }
+          ],
+          "conditionsAreExclusive": false,
+          "format": "Thirteenth Moon"
+        }
+      ],
+      "hideSign": false,
+      "dictionary": [
+        "1st Moon",
+        "2nd Moon",
+        "3rd Moon",
+        "4th Moon",
+        "5th Moon",
+        "6th Moon",
+        "7th Moon",
+        "8th Moon",
+        "9th Moon",
+        "10th Moon",
+        "11th Moon",
+        "12th Moon",
+        "13th Moon"
+      ]
+    },
+    {
+      "minLeght": 2,
+      "name": "day",
+      "type": "NUMBER",
+      "displayWhenZero": true,
+      "formatting": [],
+      "hideSign": false
+    },
+    {
+      "minLeght": 2,
+      "name": "age",
+      "type": "STRING",
+      "displayWhenZero": true,
+      "formatting": [],
+      "hideSign": false,
+      "dictionary": [
+        "I",
+        "II",
+        "--",
+        "III",
+        "IV",
+        "V"
+      ]
+    }
+  ]
+}
