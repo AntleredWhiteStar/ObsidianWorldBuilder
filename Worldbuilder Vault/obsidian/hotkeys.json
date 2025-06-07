@@ -1,0 +1,10 @@
+{
+  "obsidian-banners:banners:addBanner": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "B"
+    }
+  ]
+}
